@@ -29,7 +29,7 @@ export function MarketingDepartment() {
   ];
 
   return (
-    <section className="py-24 px-6 relative overflow-hidden" id="marketing">
+    <section className="py-24 px-6 relative overflow-hidden/" id="marketing">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <motion.h2

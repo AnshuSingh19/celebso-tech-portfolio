@@ -14,7 +14,7 @@ export function MarketingTeam() {
   };
 
   return (
-    <section className="py-24 px-6 relative" id="marketing-team">
+    <section className="py-24 px-6 relative scroll-mt-28" id="marketing-team">
       <div className="max-w-7xl mx-auto">
 
         <motion.h3

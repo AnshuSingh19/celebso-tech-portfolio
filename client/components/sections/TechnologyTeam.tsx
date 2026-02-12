@@ -18,7 +18,7 @@ export function TechnologyTeam() {
   };
 
   return (
-    <section className="py-24 px-6 relative" id="technology-team">
+    <section className="py-24 px-6 relative scroll-mt-28" id="technology-team">
       <div className="max-w-7xl mx-auto">
 
         <motion.h3

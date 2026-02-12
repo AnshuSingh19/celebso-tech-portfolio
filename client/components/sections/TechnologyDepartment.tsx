@@ -28,7 +28,7 @@ export function TechnologyDepartment() {
   ];
 
   return (
-    <section className="py-24 px-6 relative overflow-hidden" id="technology">
+    <section className="py-24 px-6 relative overflow-hidden/scroll-mt-28" id="technology">
       <div className="max-w-7xl mx-auto">
 
         <div className="text-center mb-16">

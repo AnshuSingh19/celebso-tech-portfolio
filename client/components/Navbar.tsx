@@ -133,14 +133,14 @@ export function Navbar() {
         <div className="md:hidden absolute top-full left-0 right-0 bg-background border-b border-white/10 animate-in fade-in slide-in-from-top-5">
           <div className="flex flex-col p-6 gap-4">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.to}
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-lg font-medium text-foreground/80 hover:text-primary transition-colors"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
             <Button className="w-full mt-2">Get Started</Button>
           </div>

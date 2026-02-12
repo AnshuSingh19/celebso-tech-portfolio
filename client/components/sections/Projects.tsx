@@ -110,7 +110,7 @@ export function Projects() {
   const projects = activeCategory === "technology" ? techProjects : marketingProjects;
 
   return (
-    <section className="py-24 px-6 bg-secondary/10" id="projects">
+    <section className="py-24 px-6 bg-secondary/10 scroll-mt-28" id="projects">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <motion.h2

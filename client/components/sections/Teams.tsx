@@ -63,7 +63,7 @@ export function Teams() {
   ];
 
   return (
-    <section className="py-24 px-6 relative" id="team">
+    <section className="py-24 px-6 relative scroll-mt-28" id="team">
       <div className="max-w-7xl mx-auto">
         <div className="space-y-24">
           {teams.map((team, idx) => (
