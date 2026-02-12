@@ -1,53 +1,61 @@
 import { Github, Linkedin, Twitter, Mail, Plus } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import image from "../../assets/veer-sir.jpeg";
+import image1 from "../../assets/meena.jpeg";
+import image2 from "../../assets/harpreet.jpeg";
+import image3 from "../../assets/arti.jpeg";
+import image4 from "../../assets/om.jpeg";
+import image5 from "../../assets/ansh.png";
+
+
 
 export function Teams() {
   const teams = [
     {
-  name : "Management Team",
-  members : [
-    {
-      name: "Veer Singh",
-      role: "Founder & CEO",
-      image: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg"
+      name: "Management Team",
+      members: [
+        {
+          name: "Veer Singh",
+          role: "Founder & CEO",
+          image: image
+        },
+        {
+          name: "Arti Acharya",
+          role: "Co-Founder & CoO",
+          image: image3
+        },
+         {
+          name: "Harpreet",
+          role: " Operations Director",
+          image: image2
+        },
+        {
+          name: "Om Singh",
+          role: "Senior Sales Head",
+          image: image4
+        },
+        {
+          name: "Meena Dhakad",
+          role: "Business Analytics Leadr",
+          image: image1
+        },
+      ]
     },
-    {
-      name: "Arti Acharya",
-      role: "Co-Founder & CoO",
-      image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg"
-    },
-    {
-      name: "Om Singh",
-      role: "Senior Sales Head",
-      image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg"
-    },
-    {
-      name: "Meena Dhakad",
-      role: "Business Analytics Leadr",
-      image: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg"
-    },
-    {
-      name: "Harpreet",
-      role: " Operations Director",
-      image: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg"
-    }
-  ]
-},
 
     {
       name: "Technology Team",
       members: [
-       
+
         { name: "Sudhanshu", role: "Senior Tech Lead", image: "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
         { name: "Asaram", role: " Senior Developer", image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
         { name: "Harshvardhan", role: "Full Stack Developer", image: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
         { name: "Radha Pandey", role: "Frontend Developer", image: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
         { name: "Tushar Prasad", role: "Full Stack Developer", image: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
-        {name : "Anurag Sen", role : "Frontend Developer",image: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
-        {name : "Ashish" , role : "Full Stack Developer" , image : " "},
-        { name : "Ayatullah Qamar",role : "Data Analytics"},
-        {name : "Anshu Singh",role : " Full Stack Developer"}
+        { name: "Anurag Sen", role: "Frontend Developer", image: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
+        { name: "Ashish", role: "Full Stack Developer", image: " " },
+        { name: "Ayatullah Qamar", role: "Data Analytics" },
+        { name: "Anshu Singh", role: " Full Stack Developer",image: image5 }
       ]
     },
     {
@@ -63,7 +71,7 @@ export function Teams() {
   ];
 
   return (
-    <section className="py-24 px-6 relative scroll-mt-28" id="team">
+    <section className="py-24 px-6 relative " id="team">
       <div className="max-w-7xl mx-auto">
         <div className="space-y-24">
           {teams.map((team, idx) => (
@@ -91,16 +99,27 @@ export function Teams() {
                     <div className="relative mb-4">
                       {/* Image Container with Glow */}
                       <div className="relative w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-2 border-[#00A3FF]/20 group-hover:border-[#00A3FF] transition-all duration-500 z-10">
-                        <img 
-                          src={member.image} 
-                          alt={member.name} 
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                        <img
+                          src={member.image}
+                          alt={member.name}
+                          className={cn(
+                            "w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110",
+                            member.name === "Meena Dhakad" && "object-[70%_10%]",
+
+                            member.name === "Arti Acharya" && "object-[50%_35%] scale-[1.25]",
+
+                            member.name !== "Meena Dhakad" &&
+                            member.name !== "Arti Acharya" &&
+                            "object-center"
+
+
+                          )}
                         />
                       </div>
                       {/* Hover Glow Effect */}
                       <div className="absolute inset-0 rounded-full bg-[#00A3FF]/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-0" />
                     </div>
-                    
+
                     <h4 className="font-bold text-sm md:text-base text-foreground transition-colors group-hover:text-[#00A3FF]">
                       {member.name}
                     </h4>

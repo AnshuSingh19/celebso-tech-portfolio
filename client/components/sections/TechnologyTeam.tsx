@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import image5 from "../../assets/ansh.png";
 
 export function TechnologyTeam() {
   const team = {
@@ -13,12 +14,12 @@ export function TechnologyTeam() {
         {name : "Anurag Sen", role : "Frontend Developer",image: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
         {name : "Ashish" , role : "Full Stack Developer" , image : " "},
         { name : "Ayatullah Qamar",role : "Data Analytics"},
-        {name : "Anshu Singh",role : " Full Stack Developer"}
+        {name : "Anshu Singh",role : " Full Stack Developer", image: image5},
     ]
   };
 
   return (
-    <section className="py-24 px-6 relative scroll-mt-28" id="technology-team">
+    <section className="py-24 px-6 relative " id="technology-team">
       <div className="max-w-7xl mx-auto">
 
         <motion.h3
