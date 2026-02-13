@@ -27,8 +27,8 @@ export function Navbar() {
 
   const navLinks = [
     // { name: "Home", to: "/" },
-    { name: "Marketing", to: "/marketing" },
     { name: "Technology", to: "/technology" },
+    { name: "Marketing", to: "/marketing" },
     { name: "Projects", to: "/projects" },
 
 

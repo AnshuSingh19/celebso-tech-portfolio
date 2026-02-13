@@ -41,8 +41,10 @@ export function Departments() {
   <section className="py-24 px-6 relative overflow-hidden" id="departments">
     <div className="max-w-7xl mx-auto">
 
-      {/* ================= Marketing & Growth (FIRST) ================= */}
-      <div id="marketing" className="mb-28">
+      
+
+      {/* ================= Technology Department (SECOND) ================= */}
+      <div id="technology">
         <div className="text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -50,7 +52,7 @@ export function Departments() {
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-bold mb-4 tracking-tight"
           >
-            Marketing & Growth
+            Technology Department
           </motion.h2>
 
           <motion.p
@@ -60,17 +62,17 @@ export function Departments() {
             transition={{ delay: 0.1 }}
             className="text-foreground/60 max-w-2xl mx-auto"
           >
-            Data-driven marketing systems that convert interest into revenue.
+            Custom-built enterprise solutions designed for scale and performance.
           </motion.p>
         </div>
 
         <div className="grid grid-cols-1 gap-12">
           {departments
-            .filter((d) => d.id === "marketing")
+            .filter((d) => d.id === "technology")
             .map((dept, idx) => (
               <motion.div
                 key={dept.id}
-                initial={{ opacity: 0, x: 30 }}
+                initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
@@ -113,8 +115,9 @@ export function Departments() {
         </div>
       </div>
 
-      {/* ================= Technology Department (SECOND) ================= */}
-      <div id="technology">
+
+      {/* ================= Marketing & Growth (FIRST) ================= */}
+      <div id="marketing" className="mt-40">
         <div className="text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -122,7 +125,7 @@ export function Departments() {
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-bold mb-4 tracking-tight"
           >
-            Technology Department
+            Marketing & Growth
           </motion.h2>
 
           <motion.p
@@ -132,17 +135,17 @@ export function Departments() {
             transition={{ delay: 0.1 }}
             className="text-foreground/60 max-w-2xl mx-auto"
           >
-            Custom-built enterprise solutions designed for scale and performance.
+            Data-driven marketing systems that convert interest into revenue.
           </motion.p>
         </div>
 
         <div className="grid grid-cols-1 gap-12">
           {departments
-            .filter((d) => d.id === "technology")
+            .filter((d) => d.id === "marketing")
             .map((dept, idx) => (
               <motion.div
                 key={dept.id}
-                initial={{ opacity: 0, x: -30 }}
+                initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}

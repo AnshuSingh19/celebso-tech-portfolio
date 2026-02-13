@@ -37,7 +37,7 @@ export function Teams() {
         },
         {
           name: "Meena Dhakad",
-          role: "Business Analytics Leadr",
+          role: "Business Analytics Lead",
           image: image1
         },
       ]
