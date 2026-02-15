@@ -179,7 +179,10 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Button className="w-full mt-2">Get Started</Button>
+            <Button className="w-full mt-2 bg-yellow-400 hover:bg-yellow-500 text-black shadow-lg shadow-yellow-500/20 transition-all duration-300">
+              Get Started
+            </Button>
+
           </div>
         </div>
       )}
