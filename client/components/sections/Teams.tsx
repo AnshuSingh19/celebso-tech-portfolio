@@ -8,6 +8,11 @@ import image3 from "../../assets/arti.jpeg";
 import image4 from "../../assets/om.jpeg";
 import image5 from "../../assets/ansh.png";
 import image6 from "../../assets/sammer.png";
+import image7 from "../../assets/harshwardhan.png";
+import image8 from "../../assets/anurag.png";
+import image9 from "../../assets/ashish.png";
+import image10 from "../../assets/tulsi.png";
+
 
 
 
@@ -49,14 +54,16 @@ export function Teams() {
       members: [
 
         { name: "Sudhanshu", role: "Senior Tech Lead", image: "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
+        { name: "Arpan", role: "Senior Developer", image:""},
         { name: "Asaram", role: " Senior Developer", image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
-        { name: "Harshvardhan", role: "Full Stack Developer", image: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
+        { name: "Harshvardhan", role: "Full Stack Developer", image: image7 },
         { name: "Radha Pandey", role: "Frontend Developer", image: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
         { name: "Tushar Prasad", role: "Full Stack Developer", image: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
-        { name: "Anurag Sen", role: "Frontend Developer", image: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
-        { name: "Ashish", role: "Full Stack Developer", image: " " },
+        { name: "Anurag Sen", role: "Frontend Developer", image: image8 },
+        { name: "Ashish", role: "Full Stack Developer", image: image9 },
         { name: "Ayatullah Qamar", role: "Data Analytics",image : image6 },
         { name: "Anshu Singh", role: " Full Stack Developer",image: image5 },
+        { name: "Tulshi Prasad Pandey", role: " Full Stack Developer",image: image10},
       ]
     },
     {
