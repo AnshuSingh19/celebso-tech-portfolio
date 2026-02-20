@@ -12,6 +12,8 @@ import image7 from "../../assets/harshwardhan.png";
 import image8 from "../../assets/anurag.png";
 import image9 from "../../assets/ashish.png";
 import image10 from "../../assets/tulsi.png";
+import image11 from "../../assets/arpan.jpeg";
+import image12 from "../../assets/sudhanshu.jpeg";
 
 
 
@@ -53,8 +55,8 @@ export function Teams() {
       name: "Technology Team",
       members: [
 
-        { name: "Sudhanshu", role: "Senior Tech Lead", image: "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
-        { name: "Arpan", role: "Senior Developer", image:""},
+        { name: "Sudhanshu", role: "Senior Tech Lead", image: image12 },
+        { name: "Arpan", role: "Senior Developer", image:image11},
         { name: "Asaram", role: " Senior Developer", image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
         { name: "Harshvardhan", role: "Full Stack Developer", image: image7 },
         { name: "Radha Pandey", role: "Frontend Developer", image: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },

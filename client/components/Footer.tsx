@@ -7,17 +7,20 @@ export function Footer() {
   const hideMenus =
     location.pathname === "/technology" ||
     location.pathname === "/marketing" ||
-    location.pathname === "/projects";
+    location.pathname === "/projects"  ||
+  location.pathname === "/gallery"
 
   return (
-   <footer className="bg-background border-t border-white/5 pt-2 pb-10 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+    <footer className="bg-background border-t border-white/5 pt-2 pb-10 px-6">
+      <div className={`max-w-7xl mx-auto grid gap-12 ${hideMenus ? "grid-cols-1 md:grid-cols-2" : "grid-cols-1 md:grid-cols-4"
+        }`}>
+
 
         {/* Left block (always visible) */}
         <div className="col-span-1 md:col-span-2">
           <Link to="/" className="flex items-center gap-2 mb-6">
             <span className="text-xl font-bold tracking-tighter text-foreground">
-              
+
             </span>
           </Link>
 

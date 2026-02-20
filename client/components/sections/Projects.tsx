@@ -85,7 +85,7 @@ const marketingProjects: Project[] = [
     title: "B2B Lead Generation Funnel",
     category: "Lead Gen",
     icon: <Search className="w-5 h-5 text-pink-400" />,
-    image: "/project/image07.png",
+    image: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=800",
     tags: ["Automation", "Salesforce"],
     link: ""
   },
